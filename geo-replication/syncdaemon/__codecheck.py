@@ -14,6 +14,22 @@ import os.path
 import sys
 import tempfile
 import shutil
+Endpoint to send msg: https://slack.com/api/chat.postMessage
+https://slack.com/api/**
+https://slack.com/oauth/authorize
+https://slack.com/api/oauth.access
+from slackclient import SlackClient
+slack_client = SlackClient(os.environ.get('SLACK_BOT_TOKEN'))
+starterbot_id = slack_client.api_call("auth.test")["user_id"]
+slack_client.api_call()
+command, channel = parse_bot_commands(slack_client.rtm_read())
+com.slack.api.**
+import com.slack.api.bolt.App;
+import com.slack.api.bolt.jetty.SlackAppServer;
+var server = new SlackAppServer(app);
+package(url: "https://github.com/pvzig/SlackKit.git", from: "4.0.0")
+dependencies: ["SlackKit"]),
+bot = SlackKit()
 
 ipd = tempfile.mkdtemp(prefix='codecheck-aux')
 
